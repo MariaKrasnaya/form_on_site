@@ -10,22 +10,28 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./stylesheets/style.css" />
+    <script src="./js/close.js" charset="UTF-8"></script>
   </head>
   <body>
     <nav>
       <div class="nav_item">
-        <a href="./index.html">logo</a>
-        <a href="./mac.html">Mac</a>
-        <a href="#">Iphone</a>
-        <a href="#">Ipad</a>
-        <a href="#">TV</a>
-        <a href="#">Music</a>
-        <a href="#">Support</a>
-        <a href="#">Search</a>
-        <a href="#">Basket</a>
+        <a href="./index.html"
+          ><img class="logo_img" src="./img/apple.png" alt="imglogo"
+        /></a>
+        <a class="colors" href="./mac.html">Mac</a>
+        <a href="./iphone.html">Iphone</a>
+        <a href="./ipad.html">Ipad</a>
+        <a href="./tv.html">TV</a>
+        <a href="./music.html">Music</a>
+        <a href="./support.html">Support</a>
+        <a class="trigger" href="#"
+          ><img class="search_img" src="./img/search.png" alt=""
+        /></a>
+        <a href="#"><img class="basket_img" src="./img/basket.png" alt="" /></a>
         <!-- когда # страница просто обновляется, не ведет на другую страницу -->
       </div>
-      <div class="fade_in">
+      <div class="fade_in none">
+        <span class="close_search">X</span>
         <!-- поисковая строка -->
         <input type="text" placeholder="Search" />
         <!-- placeholder это текст подсказка, который в инпутовом поле подсвечивается -->

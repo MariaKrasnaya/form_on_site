@@ -24,9 +24,39 @@ nav {
   text-decoration: none;
 }
 
+.nav_item > a:hover {
+  transition: all 0.2s linear;
+  color: #e6e6e6;
+}
+
 .fade_in {
-  display: none;
+  /* display: none; */
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.fade_in > input {
+  width: 40vw;
+  height: 1.8vw;
+  margin-top: 5vw;
+  margin-left: 30%;
+}
+
+.close_search {
+  font-size: 2vw;
+  color: aliceblue;
   position: absolute;
+  right: 20vw;
+  top: 3vw;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
 }
 
 .banner1 {
@@ -35,6 +65,8 @@ nav {
   height: 25vw;
   color: aliceblue;
   font-size: 3vw;
+  position: relative;
+  overflow: hidden;
 }
 
 .banner1 > h1 {
@@ -104,4 +136,69 @@ form > a {
   line-height: 0.8vw;
   margin-left: 1.6vw;
   width: 30vw;
+}
+
+.logo_img {
+  width: 100%;
+}
+
+.search_img {
+  width: 40%;
+}
+
+.basket_img {
+  width: 40%;
+}
+
+.anima {
+  width: 40vw;
+  height: 20vw;
+  position: absolute;
+  animation: anima 12s linear infinite;
+  margin-left: 30%;
+}
+
+@keyframes anima {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.circle {
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  border-radius: 100%;
+  filter: blur(8vw);
+}
+
+.cl0 {
+  background: blue;
+  top: 0;
+  left: 0;
+}
+.cl1 {
+  background: hotpink;
+  top: 0;
+  right: 0;
+}
+.cl2 {
+  background: green;
+  bottom: 0;
+  left: 0;
+}
+.cl3 {
+  background: yellow;
+  bottom: 0;
+  right: 0;
+}
+
+.colors {
+  color: aqua !important;
 }
