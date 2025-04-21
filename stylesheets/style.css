@@ -1,3 +1,4 @@
 @import "./reset.css"; /* сбрoc настроек браузера */
 @import "./main.css"; /* контент / содержимое  */
 @import "adaptive.css"; /* адаптивность */
+@import "./tv_table.css";

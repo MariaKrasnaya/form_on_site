@@ -1,0 +1,109 @@
+body {
+  width: 100%;
+}
+
+table {
+  margin-top: 5vw;
+}
+
+table,
+#new_row {
+  width: 94vw;
+  margin-left: 3vw;
+  border-collapse: collapse;
+  /* border-collapse чтобы не было отступов в ячейках */
+  font-size: 1vw;
+}
+
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 0.4vw;
+}
+
+th {
+  color: #999;
+}
+
+th:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+#new_row {
+  margin-top: 0.2vw;
+}
+
+#new_row > select,
+.table_button {
+  height: 2vw;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.table_button {
+  width: 3.3vw;
+}
+
+.table_button:hover {
+  cursor: pointer;
+  background: navy;
+  color: aliceblue;
+  transition: all 0.2s linear;
+}
+
+#new_row {
+  display: flex;
+  flex-direction: row;
+}
+
+td > span {
+  display: inline-block;
+  background: #ddd;
+  border-radius: 5px;
+  padding: 0.2vw 1.5vw;
+}
+
+.sp_red {
+  background: rgb(255, 0, 0, 0.5);
+}
+
+.sp_green {
+  background: rgb(9, 203, 9, 0.5);
+}
+
+#new_row > * {
+  display: table-cell;
+  margin: 0%;
+}
+
+#new_row > input[name="week"] {
+  width: 9.5vw;
+  height: 2vw;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#new_row > input[name="name_of"] {
+  width: 21.2vw;
+  height: 2vw;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#new_row > input[name="name_date"] {
+  margin-left: 0px;
+  width: 18vw;
+  height: 2vw;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#new_row > select[name="disc"] {
+  width: 22.3vw;
+}
+
+#new_row > select[name="type"] {
+  width: 17.5vw;
+}

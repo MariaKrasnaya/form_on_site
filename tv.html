@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Table.Row.</title>
     <link
       rel="shortcut icon"
       href="./img/icons8-page-with-curl-32.png"
@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <script src="./js/close.js" charset="UTF-8"></script>
+    <script src="./js/table_value.js" charset="UTF-8"></script>
   </head>
   <body>
     <nav>
@@ -24,7 +25,9 @@
         <a class="colors" href="./tv.html">TV</a>
         <a href="./music.html">Music</a>
         <a href="./support.html">Support</a>
-        <a href="#"><img class="search_img" src="./img/search.png" alt="" /></a>
+        <a href="#" class="trigger"
+          ><img class="search_img" src="./img/search.png" alt=""
+        /></a>
         <a href="#"><img class="basket_img" src="./img/basket.png" alt="" /></a>
       </div>
       <div class="fade_in none">
@@ -33,5 +36,52 @@
         <input type="text" placeholder="Search" />
       </div>
     </nav>
+
+    <table>
+      <!-- таблица -->
+      <thead>
+        <!-- table head шапка профиля -->
+        <tr>
+          <!-- table row - ряд в шапке таблицы -->
+          <th>Неделя</th>
+          <!-- th ячейка внутри шапки таблицы -->
+          <th>Название</th>
+
+          <th>Дата</th>
+          <th>Предмет</th>
+          <th>Тип</th>
+          <th>+</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- table body тело таблицы -->
+        <tr>
+          <td>1</td>
+          <td>Верстаем таблицу</td>
+          <!-- table datа  -->
+          <td>21 апреля 2025</td>
+          <td><span class="sp_red"> Технологии </span></td>
+          <td><span class="sp_green"> Лекция </span></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <form action="" id="new_row">
+      <input type="text" name="week" placeholder="Неделя" />
+      <input type="text" name="name" placeholder="Название" />
+      <input type="date" name="date" />
+      <select name="disc" id="">
+        <option value="Технологии">Технологии</option>
+        <option value="Арт Практика">Арт Практика</option>
+        <option value="Креативное проектирование">
+          Креативное проектирование
+        </option>
+      </select>
+      <select name="type" id="">
+        <option value="Воркшоп">Воркшоп</option>
+        <option value="Лекция">Лекция</option>
+      </select>
+      <button class="table_button">+</button>
+    </form>
   </body>
 </html>
