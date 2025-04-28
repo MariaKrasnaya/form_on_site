@@ -11,8 +11,24 @@
     />
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <script src="./js/close.js" charset="UTF-8"></script>
+    <script src="./js/modal.js" charset="UTF-8"></script>
   </head>
   <body>
+    <style>
+      body {
+        background: #eee;
+      }
+      h1 {
+        margin-left: 20em;
+        font-size: 3em;
+        margin-top: 2em;
+        margin-bottom: 1em;
+      }
+      h2 {
+        font-size: 1.5em;
+        line-height: 150%;
+      }
+    </style>
     <nav>
       <div class="nav_item">
         <a href="./index.html"
@@ -33,5 +49,22 @@
         <input type="text" placeholder="Search" />
       </div>
     </nav>
+
+    <h1>Em & rem</h1>
+    <button class="open_modal">Открыть модальное окно</button>
+    <button class="show_alert" data-type="error">Ошибка</button>
+    <button class="show_alert" data-type="success">Успех</button>
+    <button class="show_alert" data-type="warning">Предупреждение</button>
+    <button class="show_alert" data-type="info">Информирование</button>
+
+    <div class="modal_overlay">
+      <div class="modal">
+        <h2>Вы открыли модальное окно</h2>
+        <p>Вы супер молодец, открыли модальное окно</p>
+        <button class="close_modal">X</button>
+      </div>
+    </div>
+
+    <div class="alert_container"></div>
   </body>
 </html>

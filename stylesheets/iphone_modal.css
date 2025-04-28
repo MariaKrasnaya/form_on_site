@@ -1,0 +1,66 @@
+.open_modal,
+.show_alert,
+.close_modal {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  background-color: cadetblue;
+  color: white;
+  border: 0px;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
+.modal_overlay {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(14, 14, 14, 0.2);
+}
+
+.modal {
+  background: #ffffff;
+  width: 30em;
+  height: 5em;
+  border-radius: 0.5em;
+  color: rgb(1, 32, 58);
+  font-size: 2em;
+  text-align: center;
+  margin-left: 18em;
+  margin-top: 3em;
+  padding: 0.5em;
+}
+
+.alert {
+  padding: 1em;
+  margin: 1em 0em;
+  border-radius: 0.2em;
+  border-left: 0.5em solid;
+}
+
+.alert_error {
+  background: pink;
+  color: red;
+  border-color: red;
+}
+
+.alert_success {
+  background: rgb(175, 248, 175);
+  color: greenyellow;
+  border-color: greenyellow;
+}
+
+.alert_warning {
+  background: rgb(251, 251, 176);
+  color: yellow;
+  border-color: yellow;
+}
+
+.alert_info {
+  background: rgb(211, 211, 255);
+  color: blue;
+  border-color: blue;
+}

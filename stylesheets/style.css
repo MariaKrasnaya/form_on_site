@@ -2,3 +2,4 @@
 @import "./main.css"; /* контент / содержимое  */
 @import "adaptive.css"; /* адаптивность */
 @import "./tv_table.css";
+@import "./iphone_modal.css";
