@@ -1,0 +1,38 @@
+.sec_404 {
+  width: 100vw;
+  overflow: hidden;
+  background: #ddd;
+  text-align: center;
+}
+
+.h1_404 {
+  font-size: 20vw;
+  margin-top: 8vw;
+}
+
+.p_404 {
+  font-size: 2vw;
+  margin-top: -1vw;
+}
+
+.btn_404 {
+  margin-top: 1vw;
+  border: none;
+  padding: 0.5vw 2vw;
+  font-size: 2vw;
+  border-radius: 100vw;
+  transition: all 0.3s linear;
+}
+
+.btn_404:hover {
+  background: navy;
+  color: aliceblue;
+  transition: all 0.3s linear;
+}
+
+.img_404 {
+  position: absolute;
+  width: 5vw;
+  margin-top: 15vw;
+  margin-left: -3vw;
+}
