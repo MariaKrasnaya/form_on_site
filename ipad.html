@@ -10,7 +10,13 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="./js/close.js" charset="UTF-8"></script>
+    <script src="./js/splide.js" charset="UTF-8"></script>
   </head>
   <body>
     <nav>
@@ -33,5 +39,21 @@
         <input type="text" placeholder="Search" />
       </div>
     </nav>
+
+    <section class="splide" aria-labelledby="carousel-heading">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="./img/extarier_1.png" alt="1" />
+          </li>
+          <li class="splide__slide">
+            <img src="./img/extarier_3 1.png" alt="2" />
+          </li>
+          <li class="splide__slide">
+            <img src="./img/extarier_4 1.png" alt="3" />
+          </li>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>
